@@ -1,0 +1,33 @@
+.myNum{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(211, 193, 193);
+    box-sizing: border-box;
+    width: 350px;
+    
+
+}
+.users{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border: 3px solid whitesmoke;
+    box-sizing: border-box;
+    width: 350px;
+    height: 100px;
+  
+
+}
+.sec1{
+    /* display: flex; */
+    flex: 1;
+    background-color: rgb(153, 144, 113);
+    float:left;
+}
+.sec2{
+    /* display: flex; */
+    flex: 1;
+    background-color:rgb(145, 126, 99);
+    float: right;
+}
