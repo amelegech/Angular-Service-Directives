@@ -1,19 +1,27 @@
-
+<div class="container">
   <h2>Angular Practic</h2>
 <app-child [fromChiled]="message"  ></app-child>
+<h4 *ngIf= "hideShow; then msg1 else msg2"  > You can see this if the condition is true!  </h4>
 
-
-
+<button (click)="myToggler()">Hide & Show</button>
+<ng-template #msg1>ng-content is a content that embeded with the child component like the thext you embeded here is ngContent && ng-template is a directive represent an angular template</ng-template>
+<ng-template #msg2>
   <section class="sec1">
+  
     <div *ngFor= "let num of myNumbers" class="myNum" >
       {{num}}
       </div>
   </section>
   <section class="sec2">
+    
     <div *ngFor= "let user of users" class="users">
       ID: {{user.id}} Title: {{user.title}} Completed:{{user.completed}}
        </div >
   </section>
+   </ng-template>
+</div> 
+
+
 
  
 

@@ -10,8 +10,10 @@ import { UsersService } from './users.service';
 })
 export class AppComponent implements OnInit, OnDestroy {
   title = 'angularDem';
+
   message:String = "Message from parent!"
  
+  hideShow :boolean= true;
   myNumbers=[]
   public users  ;
   public subscribedUsers ;
@@ -21,7 +23,16 @@ for(let i=0; i<=100;i++){
 }
 
   }
- 
+
+  myToggler(){
+    this.hideShow = !this.hideShow
+    
+   
+
+  }
+  hideUsers(){
+    this.users = !this.users
+  }
   ngOnInit(): void {
     //throw new Error('Method not implemented.');
    this.subscribedUsers=  this.service.getUsers().subscribe((item)=>{
