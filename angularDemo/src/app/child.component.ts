@@ -4,7 +4,7 @@ import * as EventEmitter from 'events';
 @Component({
   selector: 'app-child',
   template: `
-    ,<div [ngStyle]="{'background-color':'orange', 'color':'white'}">
+    <div [ngStyle]="{'background-color':'orange', 'color':'white','margin-left':'15px','margin-right':'15px','padding-left':'15px'}">
     <p>
       child works!
     </p>
