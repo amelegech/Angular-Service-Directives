@@ -4,10 +4,13 @@ import * as EventEmitter from 'events';
 @Component({
   selector: 'app-child',
   template: `
+    ,<div [ngStyle]="{'background-color':'orange', 'color':'white'}">
     <p>
       child works!
     </p>
     <P>{{fromChiled}}</P>
+    </div>
+    
     
   `,
   styles: [

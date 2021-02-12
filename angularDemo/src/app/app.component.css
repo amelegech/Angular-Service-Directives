@@ -8,7 +8,7 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(211, 193, 193);
+    border: 2px solid rgb(233, 146, 15);
     box-sizing: border-box;
     margin-left: 10px;
     width: 350px;
@@ -20,7 +20,7 @@
     display:flex;
     justify-content:center;
     align-items: center;
-    border: 3px solid whitesmoke;
+    border: 3px solid rgb(241, 225, 225);
     box-sizing: border-box;
     width: 350px;
     height: 100px;
@@ -31,14 +31,16 @@
 .sec1{
     
     flex: 1;
-    background-color: rgb(153, 144, 113);
+    background-color: rgb(247, 215, 188);
+    color: orangered;
     float:left;
     margin-top: 5px;
 }
 .sec2{
     
     flex: 1;
-    background-color:rgb(145, 126, 99);
+    background-color:rgb(247, 215, 188);
+    color:orangered;
     float: right;
     margin-top: 5px;
   
@@ -49,4 +51,11 @@ button{
     background-color: maroon;
     color: mintcream;
     
+}
+.purple{
+    background-color: orchid;
+}
+.myColor{
+    color: maroon;
+    background-color: mintcream;
 }
